@@ -109,6 +109,8 @@ $white:#ffffff;
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px;
+    overflow: scroll;
+
     .message{
       padding-bottom: 46px;
       &__info{
@@ -136,8 +138,9 @@ $white:#ffffff;
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    form{
+    .new_message{
       display: flex;
+      width: 100%;
       .input-box{
         width: 100%;
         height: 50px;
@@ -157,7 +160,7 @@ $white:#ffffff;
           position: absolute;
           top: 10px;
           right: 10px;
-          &__file{
+          .hidden{
             display: none;
           }
         }
